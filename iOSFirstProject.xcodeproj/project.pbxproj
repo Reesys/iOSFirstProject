@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		CDB4609D216D215900299B24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB4609C216D215900299B24 /* AppDelegate.swift */; };
-		CDB4609F216D215900299B24 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB4609E216D215900299B24 /* ViewController.swift */; };
+		CDB4609F216D215900299B24 /* ColorChangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB4609E216D215900299B24 /* ColorChangeViewController.swift */; };
 		CDB460A2216D215900299B24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDB460A0216D215900299B24 /* Main.storyboard */; };
 		CDB460A4216D215B00299B24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDB460A3216D215B00299B24 /* Assets.xcassets */; };
 		CDB460A7216D215B00299B24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDB460A5216D215B00299B24 /* LaunchScreen.storyboard */; };
+		CDB460B3216D270000299B24 /* ColorTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB460B2216D270000299B24 /* ColorTool.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CDB46099216D215900299B24 /* iOSFirstProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSFirstProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDB4609C216D215900299B24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CDB4609E216D215900299B24 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CDB4609E216D215900299B24 /* ColorChangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorChangeViewController.swift; sourceTree = "<group>"; };
 		CDB460A1216D215900299B24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CDB460A3216D215B00299B24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CDB460A6216D215B00299B24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CDB460A8216D215B00299B24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDB460B2216D270000299B24 /* ColorTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTool.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,10 +56,10 @@
 		CDB4609B216D215900299B24 /* iOSFirstProject */ = {
 			isa = PBXGroup;
 			children = (
+				CDB460B1216D265C00299B24 /* Model */,
 				CDB460AE216D241B00299B24 /* Resources */,
-				CDB4609E216D215900299B24 /* ViewController.swift */,
-				CDB460A0216D215900299B24 /* Main.storyboard */,
-				CDB460A5216D215B00299B24 /* LaunchScreen.storyboard */,
+				CDB460AF216D261800299B24 /* Controller */,
+				CDB460B0216D264200299B24 /* View */,
 			);
 			path = iOSFirstProject;
 			sourceTree = "<group>";
@@ -70,6 +72,31 @@
 				CDB460A8216D215B00299B24 /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		CDB460AF216D261800299B24 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CDB4609E216D215900299B24 /* ColorChangeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CDB460B0216D264200299B24 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CDB460A0216D215900299B24 /* Main.storyboard */,
+				CDB460A5216D215B00299B24 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CDB460B1216D265C00299B24 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CDB460B2216D270000299B24 /* ColorTool.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,8 +170,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDB4609F216D215900299B24 /* ViewController.swift in Sources */,
+				CDB4609F216D215900299B24 /* ColorChangeViewController.swift in Sources */,
 				CDB4609D216D215900299B24 /* AppDelegate.swift in Sources */,
+				CDB460B3216D270000299B24 /* ColorTool.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
